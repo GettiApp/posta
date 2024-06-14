@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posta</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Posta</h1>
+            <p>Share your videos!</p>
+        </div>
+        <nav>
+            <a href="#">Home</a>
+            <a href="video-page.html">Videos</a>
+        </nav>
+    </header>
+    <main>
+        <h2>Post a Video</h2>
+        <form id="video-form">
+            <label for="video-file">Select Video:</label>
+            <input type="file" id="video-file" accept="video/*">
+            <br>
+            <label for="video-title">Title:</label>
+            <input type="text" id="video-title" placeholder="Enter a catchy title">
+            <br>
+            <button type="submit" id="publish-button">Publish</button>
+        </form>
+    </main>
+
+    <script>
+        // Script for video upload and storage (implementation details in script.js)
+        const videoForm = document.getElementById('video-form');
+        videoForm.addEventListener('submit', handleVideoUpload);
+    </script>
+</body>
+</html>
